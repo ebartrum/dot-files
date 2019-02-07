@@ -20,4 +20,4 @@ set fish_greeting
 # Misc
 alias open "xdg-open"
 alias vim "nvim"
-
+git config --global core.editor "nvim"
