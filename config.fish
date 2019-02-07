@@ -19,4 +19,5 @@ set fish_greeting
 
 # Misc
 alias open "xdg-open"
+alias vim "nvim"
 

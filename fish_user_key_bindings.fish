@@ -4,5 +4,5 @@ function fish_user_key_bindings
   bind \cp accept-autosuggestion 
   bind \cq kill-whole-line
   bind \ch backward-kill-word
-  fzf_key_bindings
+#  fzf_key_bindings
 end
