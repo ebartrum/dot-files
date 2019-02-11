@@ -22,5 +22,4 @@ alias open "xdg-open"
 alias vim "nvim"
 git config --global core.editor "nvim"
 
-source /anaconda/etc/fish/conf.d/conda.fish
 source ~/.config/fish/env-vars.fish
