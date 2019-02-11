@@ -22,4 +22,4 @@ alias open "xdg-open"
 alias vim "nvim"
 git config --global core.editor "nvim"
 
-source ~/.config/fish/env-vars.fish
+source ~/.config/fish/config-extra.fish
