@@ -23,4 +23,4 @@ alias vim "nvim"
 git config --global core.editor "nvim"
 
 source /anaconda/etc/fish/conf.d/conda.fish
-source ~/.config/env_vars.fish
+source ~/.config/env-vars.fish
