@@ -165,3 +165,6 @@ bar {
 
 # Background image
 exec_always --no-startup-id feh --bg-scale ~/Pictures/sf-background-corrected.jpg
+
+# Lock
+bindsym $mod+shift+x exec i3lock
