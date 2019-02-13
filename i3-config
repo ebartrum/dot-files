@@ -170,3 +170,5 @@ exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
 # Lock
 bindsym $mod+shift+x exec betterlockscreen -l 
 
+# Print screen
+bindsym Print exec gnome-screenshot -i
