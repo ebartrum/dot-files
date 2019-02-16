@@ -172,3 +172,6 @@ bindsym $mod+shift+x exec betterlockscreen -l
 
 # Print screen
 bindsym Print exec gnome-screenshot -i
+
+# Keyboard RGB
+exec_always ckb-next -b
