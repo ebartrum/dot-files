@@ -2,6 +2,7 @@
 mkdir -p ~/.config/fish/functions
 mkdir -p ~/.config/nvim
 touch config-extra.fish
+ln -is ~/Documents/dot-files/.Xresources ~/.Xresources
 ln -is ~/Documents/dot-files/.tmux.conf ~/.tmux.conf
 ln -is ~/Documents/dot-files/.tmux-ssh.conf ~/.tmux-ssh.conf
 ln -is ~/Documents/dot-files/config.fish ~/.config/fish/config.fish
