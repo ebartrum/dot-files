@@ -1,6 +1,7 @@
 #!/bin/bash
 mkdir -p ~/.config/fish/functions
 mkdir -p ~/.config/nvim
+mkdir -p ~/.config/i3status
 touch config-extra.fish
 ln -is ~/Documents/dot-files/.tmux.conf ~/.tmux.conf
 ln -is ~/Documents/dot-files/.tmux-ssh.conf ~/.tmux-ssh.conf
