@@ -26,6 +26,7 @@ git config --global core.editor "nvim"
 abbr --add gc git commit
 abbr --add ga git add 
 abbr --add gs git status 
+abbr --add gd git diff 
 
 # Source machine specific config
 source ~/.config/fish/config-extra.fish
