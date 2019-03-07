@@ -22,4 +22,9 @@ alias open "xdg-open"
 alias vim "nvim"
 git config --global core.editor "nvim"
 
+#Abbreviations
+abbr --add gc git commit
+abbr --add ga git add 
+
+# Source machine specific config
 source ~/.config/fish/config-extra.fish
