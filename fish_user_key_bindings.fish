@@ -4,5 +4,7 @@ function fish_user_key_bindings
   bind \cp accept-autosuggestion 
   bind \cq kill-whole-line
   bind \ch backward-kill-word
+  bind \c_ 'prevd >/dev/null; commandline -f repaint'
+  bind \c] 'nextd >/dev/null; commandline -f repaint'
 #  fzf_key_bindings
 end
