@@ -1,13 +1,13 @@
 URxvt*loginShell:true
 URxvt*transparent:true
-URxvt*shading:5
-URxvt*background:Black
+URxvt*shading:30
 URxvt*foreground:White
 URxvt*scrollBar:true
 URxvt*scrollBar_right:true
 URxvt*scrollBar_floating:false
 URxvt*scrollstyle:plain
 URxvt*secondaryScroll:true
+URxvt*saveLines:0
 URxvt.font:     xft:bitstream vera sans mono:size=12:antialias=true
 URxvt.boldFont: xft:bitstream vera sans mono:bold:size=12:antialias=true
 URxvt.color3:           DarkGoldenrod
