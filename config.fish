@@ -18,7 +18,6 @@ set fish_greeting
 # set CPATH /usr/local/cuda/include $CPATH 
 
 # Misc
-alias open "xdg-open"
 alias vim "nvim"
 git config --global core.editor "nvim"
 
@@ -27,6 +26,7 @@ abbr --add gc git commit
 abbr --add ga git add 
 abbr --add gs git status 
 abbr --add gd git diff 
+abbr --add op xdg-open
 
 # Fish git prompt
 set __fish_git_prompt_showdirtystate 'yes'
