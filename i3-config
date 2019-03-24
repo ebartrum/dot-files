@@ -35,6 +35,9 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# lock screen
+bindsym $mod+Shift+x exec i3lock -c 000000
+
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -84,7 +87,7 @@ bindsym $mod+minus split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+# bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -167,14 +170,19 @@ bar {
 # Background image
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
 
-# Lock
-bindsym $mod+shift+x exec betterlockscreen -l 
-
-# Print screen
-bindsym Print exec gnome-screenshot -i
-
 # Keyboard RGB
 exec_always ckb-next -b
 
 # No titlebar
 for_window [class="^.*"] border pixel 0
+
+#Print button
+bindsym --release Print exec "scrot -s ~/Pictures/screenshot.png; notify-send 'screenshot captured'"
+
+#Surf shortcut
+bindsym $mod+s exec surf duckduckgo.com 
+
+#Gaps
+gaps inner 10
+gaps outer 0
+smart_gaps on
