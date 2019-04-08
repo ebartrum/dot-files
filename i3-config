@@ -134,6 +134,9 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+# File manager 
+bindsym $mod+n exec urxvt -e nnn 
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -184,5 +187,6 @@ bindsym $mod+s exec surf duckduckgo.com
 
 #Gaps
 gaps inner 10
-gaps outer 0
+gaps top 10
+gaps bottom 10
 smart_gaps on
