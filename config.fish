@@ -26,6 +26,7 @@ abbr --add gc git commit
 abbr --add ga git add 
 abbr --add gs git status 
 abbr --add gd git diff 
+abbr --add gl git log 
 abbr --add op xdg-open
 
 # Fish git prompt
