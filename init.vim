@@ -47,8 +47,8 @@ let g:airline_theme = 'one'
 set termguicolors
 
 "Press (shift) enter in command mode to insert a new-line after (before) the current line
-nmap <S-CR> O<Esc>
-nmap <CR> o<Esc>
+nmap <S-CR> O<C-c>
+nmap <CR> o<C-c>k
 
 "Open files using fzf
 nnoremap <silent> <expr> <C-o> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Files\<cr>"
@@ -133,4 +133,3 @@ let g:easyescape_chars = { "j": 1, "k": 1 }
 let g:easyescape_timeout = 100
 cnoremap jk <ESC>
 cnoremap kj <ESC>
-
