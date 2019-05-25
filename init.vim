@@ -54,7 +54,7 @@ nmap <CR> o<Esc>
 nnoremap <silent> <expr> <C-o> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Files\<cr>"
 
 "clipboard sharing
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " Set tab to 4 spaces
 set tabstop=4 shiftwidth=4 expandtab
