@@ -21,6 +21,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'dag/vim-fish'
 Plug 'tdehaeze/matlab-vim'
 Plug 'zhou13/vim-easyescape'
+Plug 'Shougo/deoplete.nvim'
 call plug#end()
 
 "vim-commentary shortcut (Ctrl /)
@@ -133,3 +134,9 @@ let g:easyescape_chars = { "j": 1, "k": 1 }
 let g:easyescape_timeout = 100
 cnoremap jk <ESC>
 cnoremap kj <ESC>
+
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+" Ctrl j and k to navigate menus
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
