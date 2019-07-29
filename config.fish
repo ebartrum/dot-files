@@ -12,6 +12,7 @@ abbr --add gs git status
 abbr --add gd git diff 
 abbr --add gl git log 
 abbr --add op xdg-open
+abbr --add gap git add -p 
 
 # Fish git prompt
 set __fish_git_prompt_showdirtystate 'yes'
