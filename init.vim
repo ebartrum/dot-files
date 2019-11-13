@@ -22,6 +22,8 @@ Plug 'dag/vim-fish'
 Plug 'tdehaeze/matlab-vim'
 Plug 'zhou13/vim-easyescape'
 Plug 'Shougo/deoplete.nvim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 "vim-commentary shortcut (Ctrl /)
@@ -140,3 +142,7 @@ let g:deoplete#enable_at_startup = 1
 " Ctrl j and k to navigate menus
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+
+"Status line
+let g:airline_theme='bubblegum'
+set noshowmode
