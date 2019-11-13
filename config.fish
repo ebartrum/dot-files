@@ -44,3 +44,6 @@ end
 
 # Source machine specific config
 source ~/.config/fish/config-extra.fish
+
+# FZF command
+set -gx FZF_DEFAULT_COMMAND  'rg --files --no-ignore-vcs --hidden'
