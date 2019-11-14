@@ -1,5 +1,6 @@
 function fish_user_key_bindings
   bind \co forward-word
+  bind \cn find_and_open
   bind \ck up-or-search
   bind \cp accept-autosuggestion 
   bind \cq kill-whole-line
