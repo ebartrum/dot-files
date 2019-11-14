@@ -42,6 +42,14 @@ function fish_prompt
   set_color normal
 end
 
+function find_and_open
+    set -lx file (ls | fzf --height 40%)
+    if string length $file > 0
+        vim $file
+    end
+    commandline -f repaint
+end
+
 # Source machine specific config
 source ~/.config/fish/config-extra.fish
 
