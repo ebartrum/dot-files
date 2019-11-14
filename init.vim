@@ -24,6 +24,7 @@ Plug 'zhou13/vim-easyescape'
 Plug 'Shougo/deoplete.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'kien/rainbow_parentheses.vim'
 call plug#end()
 
 "vim-commentary shortcut (Ctrl /)
@@ -146,3 +147,6 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 "Status line
 let g:airline_theme='bubblegum'
 set noshowmode
+
+"Rainbow parentheses
+au VimEnter * RainbowParenthesesToggle
