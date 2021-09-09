@@ -4,6 +4,8 @@ set fish_greeting
 # Misc
 alias vim "nvim"
 git config --global core.editor "nvim"
+set -U EDITOR "nvim"
+set -U VISUAL "nvim"
 
 #Abbreviations
 abbr --add gc git commit
