@@ -22,9 +22,7 @@ Plug 'dag/vim-fish'
 Plug 'tdehaeze/matlab-vim'
 Plug 'zhou13/vim-easyescape'
 Plug 'Shougo/deoplete.nvim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'kien/rainbow_parentheses.vim'
+Plug 'voldikss/vim-floaterm'
 call plug#end()
 
 "vim-commentary shortcut (Ctrl /)
@@ -48,14 +46,13 @@ autocmd VimEnter * hi CursorLineNr term=bold ctermfg=11 gui=bold guifg=DarkOrang
 "Theme options
 set background=dark
 let g:airline_theme = 'one'
-set termguicolors
 
 "Press (shift) enter in command mode to insert a new-line after (before) the current line
 nmap <S-CR> O<C-c>
 nmap <CR> o<C-c>k
 
 "Open files using fzf
-nnoremap <silent> <expr> <C-o> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Files\<cr>"
+noremap <silent> <C-o> :FloatermNew fzf<CR>
 
 "clipboard sharing
 set clipboard=unnamedplus
@@ -144,9 +141,8 @@ let g:deoplete#enable_at_startup = 1
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 
-"Status line
-let g:airline_theme='bubblegum'
-set noshowmode
+" Keymap for paste toggling
+:set pastetoggle=<A-p>
 
-"Rainbow parentheses
-au VimEnter * RainbowParenthesesToggle
+" Set python path
+let g:python3_host_prog = '/usr/sbin/python'
