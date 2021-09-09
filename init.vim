@@ -143,6 +143,3 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 
 " Keymap for paste toggling
 :set pastetoggle=<A-p>
-
-" Set python path
-let g:python3_host_prog = '/usr/sbin/python'
