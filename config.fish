@@ -9,12 +9,14 @@ set -U VISUAL "nvim"
 
 #Abbreviations
 abbr --add gc git commit
+abbr --add gcm git commit -m
 abbr --add ga git add 
 abbr --add gs git status 
 abbr --add gd git diff 
 abbr --add gl git log 
+abbr --add gap git add -p
+abbr --add gchp git checkout -p
 abbr --add op xdg-open
-abbr --add gap git add -p 
 
 # Fish git prompt
 set __fish_git_prompt_showdirtystate 'yes'
