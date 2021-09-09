@@ -15,6 +15,7 @@ abbr --add gs git status
 abbr --add gd git diff 
 abbr --add gl git log 
 abbr --add gap git add -p
+abbr --add gch git checkout
 abbr --add gchp git checkout -p
 abbr --add op xdg-open
 
