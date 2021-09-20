@@ -52,7 +52,7 @@ nmap <S-CR> O<C-c>
 nmap <CR> o<C-c>k
 
 "Open files using fzf
-noremap <silent> <C-o> :FloatermNew fzf<CR>
+noremap <silent> <C-M-o> :FloatermNew fzf<CR>
 
 "clipboard sharing
 set clipboard=unnamedplus
