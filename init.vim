@@ -4,7 +4,7 @@ set encoding=utf-8
 " Set no highlight search
 set nohlsearch
 
-" Disable esc in insert mode 
+" Disable esc in insert mode
 imap <Esc> <NOP>
 
 " Paste over text without changing register contents
@@ -21,8 +21,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'dag/vim-fish'
 Plug 'tdehaeze/matlab-vim'
 Plug 'zhou13/vim-easyescape'
-Plug 'Shougo/deoplete.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'voldikss/vim-floaterm'
+Plug 'danilamihailov/beacon.nvim'
 call plug#end()
 
 "vim-commentary shortcut (Ctrl /)
@@ -52,7 +53,7 @@ nmap <S-CR> O<C-c>
 nmap <CR> o<C-c>k
 
 "Open files using fzf
-noremap <silent> <C-M-o> :FloatermNew fzf<CR>
+noremap <silent> <C-M-o> :FZF<CR>
 
 "clipboard sharing
 set clipboard=unnamedplus
@@ -135,11 +136,16 @@ let g:easyescape_timeout = 100
 cnoremap jk <ESC>
 cnoremap kj <ESC>
 
-" Use deoplete.
+" " Use deoplete.
 let g:deoplete#enable_at_startup = 1
-" Ctrl j and k to navigate menus
+" " Ctrl j and k to navigate menus
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 
 " Keymap for paste toggling
 :set pastetoggle=<A-p>
+
+" Set python path
+let g:python3_host_prog = '/sbin/python'
+
+highlight Beacon guibg=gray ctermbg=15
