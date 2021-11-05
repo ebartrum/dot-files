@@ -50,12 +50,12 @@ function fish_prompt
   set_color normal
 end
 
-function find_and_open
-    set -lx file (ls | fzf --height 40%)
-    if string length $file > 0
-        vim $file
-    end
-    commandline -f repaint
+function search_and_edit
+  set filename (fzf --height 20 --reverse)
+  if string length -q $filename
+      nvim $filename
+  end
+  commandline -f repaint
 end
 
 # Source machine specific config
