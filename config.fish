@@ -14,6 +14,7 @@ abbr --add ga git add
 abbr --add gs git status 
 abbr --add gd git diff 
 abbr --add gl git log 
+abbr --add gla git log --all
 abbr --add gap git add -p
 abbr --add gch git checkout
 abbr --add gchp git checkout -p
