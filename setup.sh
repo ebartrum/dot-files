@@ -12,3 +12,4 @@ ln -is ~/Documents/repos/dot-files/init.vim ~/.config/nvim/init.vim
 ln -is ~/Documents/repos/dot-files/i3-config ~/.config/i3/config
 ln -is ~/Documents/repos/dot-files/i3status-config ~/.config/i3status/config
 ln -is ~/Documents/repos/dot-files/.Xdefaults ~/.Xdefaults
+ln -is ~/Documents/repos/dot-files/polybar-config ~/.config/polybar/config
