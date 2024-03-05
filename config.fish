@@ -3,6 +3,7 @@ set fish_greeting
 
 # Misc
 alias vim "nvim"
+alias vi "nvim"
 git config --global core.editor "nvim"
 set -U EDITOR "nvim"
 set -U VISUAL "nvim"

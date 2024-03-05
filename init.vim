@@ -23,6 +23,7 @@ Plug 'zhou13/vim-easyescape'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'voldikss/vim-floaterm'
 Plug 'danilamihailov/beacon.nvim'
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 "vim-commentary shortcut (Ctrl /)
@@ -148,3 +149,5 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 let g:python3_host_prog = '/sbin/python'
 
 highlight Beacon guibg=gray ctermbg=15
+
+let mapleader = "," " map leader to comma
