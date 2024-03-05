@@ -1,0 +1,162 @@
+[colors.bright]
+black = "0x7a7a7a"
+blue = "0x9b6bdf"
+cyan = "0x75d7ec"
+green = "0x42e66c"
+magenta = "0xe64747"
+red = "0xe356a7"
+white = "0xf8f8f2"
+yellow = "0xe4f34a"
+
+[colors.cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[colors.dim]
+black = "0x2a2a2a"
+blue = "0x9b6bdf"
+cyan = "0x75d7ec"
+green = "0x42e66c"
+magenta = "0xe64747"
+red = "0xe356a7"
+white = "0xf8f8f2"
+yellow = "0xe4f34a"
+
+[colors.line_indicator]
+background = "None"
+foreground = "None"
+
+[colors.normal]
+black = "0x2a2a2a"
+blue = "0x9b6bdf"
+cyan = "0x75d7ec"
+green = "0x42e66c"
+magenta = "0xe64747"
+red = "0xe356a7"
+white = "0xf8f8f2"
+yellow = "0xe4f34a"
+
+[colors.primary]
+background = "0x282a36"
+foreground = "0xf8f8f2"
+
+[colors.search.focused_match]
+background = "0xffb86c"
+foreground = "0x44475a"
+
+[colors.search.matches]
+background = "0x50fa7b"
+foreground = "0x44475a"
+
+[colors.selection]
+background = "0x44475a"
+text = "CellForeground"
+
+[colors.vi_mode_cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 8.0
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "PasteSelection"
+key = "Insert"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Plus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F11"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "Paste"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "Copy"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ClearLogNotice"
+key = "L"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\f"
+key = "L"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key = "PageUp"
+mode = "~Alt"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key = "PageDown"
+mode = "~Alt"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ScrollToTop"
+key = "Home"
+mode = "~Alt"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollToBottom"
+key = "End"
+mode = "~Alt"
+mods = "Shift"
+
+[scrolling]
+history = 50000
+
+[window]
+dynamic_padding = false
+title = "Alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 2
+y = 2
