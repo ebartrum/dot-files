@@ -44,12 +44,13 @@ set __fish_git_prompt_char_upstream_behind '-'
 function fish_prompt
   set last_status $status
 
-  printf '%s' (prompt_hostname):
+  printf '%s' (prompt_hostname)
+  set_color bryellow
+  printf '%s ' (echo $STY)
   set_color $fish_color_cwd
   printf '%s' (prompt_pwd)
   set_color normal
   printf '%s ' (__fish_git_prompt)
-  set_color normal
 end
 
 function search_and_edit
