@@ -31,16 +31,16 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 3
 
-font-0 = fixed:pixelsize=18;1
-font-1 = unifont:fontformat=truetype:size=14:antialias=false;0
-font-2 = siji:pixelsize=18;1
+font-0 = fixed:pixelsize=12;1
+font-1 = unifont:fontformat=truetype:size=10:antialias=false;0
+font-2 = siji:pixelsize=12;1
 
 modules-left = i3
 modules-center = 
 modules-right = wlan eth battery date powermenu
 
 tray-position = right
-tray-padding = 2
+tray-padding = 0
 ;tray-background = #0063ff
 
 ;Place bar at bottom of screen
@@ -94,11 +94,12 @@ label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%
-label-focused-background = ${colors.background-alt}
+label-focused-background = #FAD1FF
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %index%
+label-unfocused-background = #EC80FF
 label-unfocused-padding = 2
 
 ; visible = Active workspace on unfocused monitor
