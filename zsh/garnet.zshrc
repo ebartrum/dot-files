@@ -98,6 +98,9 @@ abbr add --quiet gb='git branch'
 abbr add --quiet gbd='git branch -d'
 abbr add --quiet op='xdg-open'
 
+# Navigation
+bindkey '^k' up-line-or-search
+
 # FZF keybindings
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
