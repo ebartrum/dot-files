@@ -38,6 +38,7 @@ unset __conda_setup
 
 #Environment Variables
 export EDITOR='nvim'
+export PATH="/home/ed/.local/bin:$PATH"
 
 #SSH keychain
 eval $(keychain --eval --quiet id_ed25519)
