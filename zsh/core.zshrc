@@ -1,5 +1,6 @@
 # Navigation
 bindkey '^k' up-line-or-search
+bindkey -s '^[^o' '^ufile=$(fzf --height 40% --reverse); [[ ! -z "\$file" ]] && nvim $file^M'
 
 # Abbreviations
 abbr add --quiet gch='git checkout'
