@@ -23,8 +23,8 @@ Plug 'vimwiki/vimwiki'
 call plug#end()
 
 "vim-commentary shortcut (Ctrl /)
-noremap <silent> <C-_> :Commentary<CR>
-inoremap <silent> <C-_> <Esc>:Commentary<CR>A
+noremap <silent> <C-/> :Commentary<CR>
+inoremap <silent> <C-/> <Esc>:Commentary<CR>A
 
 "Hybrid line numbers
 set relativenumber
