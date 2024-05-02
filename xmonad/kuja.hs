@@ -22,6 +22,9 @@ myStartupHook = do
 lockScreen = do
     spawn "betterlockscreen -l &"
 
+screenshotScreen = do
+    spawn "scrot -s ~/Pictures/screenshot.png &"
+
 myLayout = tiled |||  Full
 mySB = statusBarProp "xmobar" (pure xmobarPP)
 
@@ -39,5 +42,6 @@ myConfig = def
   `additionalKeysP`
 	    [("M-S-q", quitWithWarning)
 	    ,("M-S-l", lockScreen)
+	    ,("M-S-s", screenshotScreen)
 	    ,("M-f", spawn "firefox")
 	    ]
