@@ -26,6 +26,7 @@ screenshotScreen = do
     spawn "scrot -s ~/Pictures/screenshot.png &"
 
 myLayout = tiled |||  Full
+tiled = Tall 1 (3.0/100.0) (1.0/2.0)
 mySB = statusBarProp "xmobar" (pure xmobarPP)
 
 main :: IO ()
