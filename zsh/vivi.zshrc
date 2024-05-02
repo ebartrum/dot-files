@@ -18,8 +18,9 @@ source $HOME/.zsh_core_rc
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #Prompt
+HOSTCOLOUR=magenta
 autoload -U colors && colors
-PS1="%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}$(hostname) %{$fg[green]%}%~ %{$reset_color%}% "
+PS1="%{$fg[green]%}%n%{$reset_color%}@%{$fg[$HOSTCOLOUR]%}$(hostname) %{$fg[green]%}%~ %{$reset_color%}% "
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
