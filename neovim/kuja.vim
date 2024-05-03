@@ -90,3 +90,6 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 
 "Beacon
 highlight Beacon guibg=gray ctermbg=15
+
+"Python provider
+let g:python3_host_prog = '/sbin/python'
