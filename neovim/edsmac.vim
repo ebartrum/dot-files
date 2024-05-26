@@ -18,3 +18,5 @@ set number relativenumber
 
 " Setup indent-blankline
 " require("ibl").setup()
+"
+nnoremap   <silent>   <C-n>   :FloatermToggle<CR>
