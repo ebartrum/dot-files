@@ -18,7 +18,6 @@ Plug 'dag/vim-fish'
 Plug 'zhou13/vim-easyescape'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'voldikss/vim-floaterm'
-Plug 'danilamihailov/beacon.nvim'
 Plug 'vimwiki/vimwiki'
 call plug#end()
 
@@ -94,3 +93,4 @@ highlight Beacon guibg=gray ctermbg=15
 "FloatTerm
 nnoremap <silent> <C-t>   :FloatermToggle<CR>
 tnoremap <silent> <C-t>   <C-\><C-n>:FloatermToggle<CR>
+tnoremap <silent> <C-c>   <C-\><C-n>:FloatermToggle<CR>
