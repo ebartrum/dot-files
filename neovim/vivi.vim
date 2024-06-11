@@ -90,3 +90,7 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 
 "Beacon
 highlight Beacon guibg=gray ctermbg=15
+
+"FloatTerm
+nnoremap <silent> <C-t>   :FloatermToggle<CR>
+tnoremap <silent> <C-t>   <C-\><C-n>:FloatermToggle<CR>
