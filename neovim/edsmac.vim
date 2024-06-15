@@ -10,6 +10,8 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'ptzz/lf.vim'
 Plug 'voldikss/vim-floaterm'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.6' }
 
 call plug#end()
 
@@ -22,3 +24,5 @@ set number relativenumber
 nnoremap   <silent>   <C-t>   :FloatermNew<CR>
 tnoremap   <silent>   <C-t>   <C-\><C-n>:FloatermKill<CR>
 tnoremap   <silent>   <C-c>   <C-\><C-n>:FloatermKill<CR>
+
+nnoremap   <silent>   <C-o> <cmd>Telescope find_files<cr>
