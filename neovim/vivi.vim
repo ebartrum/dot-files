@@ -17,11 +17,8 @@ Plug 'tpope/vim-commentary'
 Plug 'dag/vim-fish'
 Plug 'zhou13/vim-easyescape'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'danilamihailov/beacon.nvim'
-Plug 'vimwiki/vimwiki'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
-Plug 'ptzz/lf.vim'
 Plug 'voldikss/vim-floaterm'
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 "vim-commentary shortcut (Ctrl /)
@@ -44,9 +41,7 @@ nmap <S-CR> O<C-c>
 nmap <CR> o<C-c>k
 
 "Open files using fzf
-"noremap <silent> <C-M-o> :FZF<CR>
-"Open files using lf
-noremap <silent> <C-M-o> :Lf<CR>
+noremap <silent> <C-M-o> :FZF<CR>
 
 "clipboard sharing
 set clipboard=unnamedplus
@@ -95,9 +90,7 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 "Beacon
 highlight Beacon guibg=gray ctermbg=15
 
-"LF options
-let g:lf_command_override = 'lf -command "set hidden"'
-let g:floaterm_height = 30
-
-"Python provider
-let g:python3_host_prog = '/sbin/python'
+"FloatTerm
+nnoremap <silent> <C-t>   :FloatermToggle<CR>
+tnoremap <silent> <C-t>   <C-\><C-n>:FloatermToggle<CR>
+tnoremap <silent> <C-c>   <C-\><C-n>:FloatermToggle<CR>
