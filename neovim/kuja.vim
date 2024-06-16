@@ -27,6 +27,8 @@ call plug#end()
 "vim-commentary shortcut (Ctrl /)
 noremap <silent> <C-/> :Commentary<CR>
 inoremap <silent> <C-/> <Esc>:Commentary<CR>A
+noremap <silent> # :Commentary<CR>
+noremap <silent> " :Commentary<CR>
 
 "Hybrid line numbers
 set relativenumber
