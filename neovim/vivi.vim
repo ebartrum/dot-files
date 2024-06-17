@@ -11,6 +11,8 @@ imap <Esc> <NOP>
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.6' }
 Plug 'rakr/Vim-one'
 Plug 'Chiel92/vim-autoformat'
 Plug 'tpope/vim-commentary'
@@ -40,8 +42,8 @@ let g:airline_theme = 'one'
 nmap <S-CR> O<C-c>
 nmap <CR> o<C-c>k
 
-"Open files using fzf
-noremap <silent> <C-M-o> :FZF<CR>
+"Open files using telescope
+nnoremap   <silent>   <C-o> <cmd>Telescope find_files<cr>
 
 "clipboard sharing
 set clipboard=unnamedplus
