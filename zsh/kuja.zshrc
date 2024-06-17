@@ -21,24 +21,22 @@ source $HOME/.zsh_core_rc
 autoload -U colors && colors
 PS1="%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}$(hostname) %{$fg[green]%}%~ %{$reset_color%}% "
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/opt/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
 #Environment Variables
 export EDITOR='nvim'
 export PATH="/home/ed/.local/bin:$PATH"
 
 #SSH keychain
 eval $(keychain --eval --quiet id_ed25519)
+
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba init' !!
+export MAMBA_EXE='/home/ed/.local/bin/micromamba';
+export MAMBA_ROOT_PREFIX='/home/ed/micromamba';
+__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__mamba_setup"
+else
+    alias micromamba="$MAMBA_EXE"  # Fallback on help from mamba activate
+fi
+unset __mamba_setup
+# <<< mamba initialize <<<
