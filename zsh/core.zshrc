@@ -20,3 +20,5 @@ abbr add --quiet gbd='git branch -d'
 abbr add --quiet op='xdg-open'
 abbr add -f -qq vim='nvim'
 abbr add --quiet mamba='micromamba'
+
+unsetopt share_history
