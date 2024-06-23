@@ -22,11 +22,15 @@ Plug 'vimwiki/vimwiki'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 Plug 'ptzz/lf.vim'
 Plug 'voldikss/vim-floaterm'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.6' }
 call plug#end()
 
 "vim-commentary shortcut (Ctrl /)
 noremap <silent> <C-/> :Commentary<CR>
 inoremap <silent> <C-/> <Esc>:Commentary<CR>A
+noremap <silent> # :Commentary<CR>
+noremap <silent> " :Commentary<CR>
 
 "Hybrid line numbers
 set relativenumber
@@ -43,10 +47,8 @@ let g:airline_theme = 'one'
 nmap <S-CR> O<C-c>
 nmap <CR> o<C-c>k
 
-"Open files using fzf
-"noremap <silent> <C-M-o> :FZF<CR>
-"Open files using lf
-noremap <silent> <C-M-o> :Lf<CR>
+"Open files using telescope
+nnoremap   <silent>   <C-o> <cmd>Telescope find_files<cr>
 
 "clipboard sharing
 set clipboard=unnamedplus
