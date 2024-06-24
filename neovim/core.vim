@@ -1,7 +1,6 @@
 "Split panes
 set splitbelow
 nnoremap <silent> - :sp <CR>
-
 call plug#begin()
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
