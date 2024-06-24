@@ -7,6 +7,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lervag/vimtex'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'folke/persistence.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
@@ -18,6 +19,12 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.6' }
 Plug 'zhou13/vim-easyescape'
 
 call plug#end()
+
+"vim-commentary shortcut (Ctrl /)
+noremap <silent> <C-/> :Commentary<CR>
+inoremap <silent> <C-/> <Esc>:Commentary<CR>A
+noremap <silent> # :Commentary<CR>
+noremap <silent> " :Commentary<CR>
 
 " Hybrid line numbers
 set number relativenumber
