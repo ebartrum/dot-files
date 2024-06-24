@@ -1,15 +1,5 @@
-# Your oh-my-zsh installation.
-ZSH=/usr/share/oh-my-zsh/
-ZSH_THEME="fishy"
-
-# Which plugins would you like to load? (found in $ZSH/plugins/)
-plugins=(git zsh-abbr)
-
-ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
-if [[ ! -d $ZSH_CACHE_DIR ]]; then
-  mkdir $ZSH_CACHE_DIR
-fi
-source $ZSH/oh-my-zsh.sh
+#zsh abbreviations
+source $HOME/.zsh_plugins/zsh-abbr/zsh-abbr.zsh
 
 #Shared config across machines
 source $HOME/.zsh_core_rc
