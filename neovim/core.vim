@@ -52,3 +52,6 @@ nnoremap <C-H> <C-W><C-H>
 "Space in normal mode selects current word
 nnoremap <space> viw
 vnoremap <space> w
+
+"clipboard sharing
+set clipboard=unnamedplus
