@@ -100,6 +100,3 @@ highlight Beacon guibg=gray ctermbg=15
 "LF options
 let g:lf_command_override = 'lf -command "set hidden"'
 let g:floaterm_height = 30
-
-"Python provider
-let g:python3_host_prog = '/sbin/python'
