@@ -1,6 +1,10 @@
 # Navigation
 bindkey '^k' up-line-or-search
 bindkey -s '^[^o' '^ufile=$(fzf --height 40% --reverse); [[ ! -z "\$file" ]] && nvim $file^M'
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+bindkey "^[[1;3C" forward-word
+bindkey "^[[1;3D" backward-word
 
 # Abbreviations
 abbr add --quiet gch='git checkout'
