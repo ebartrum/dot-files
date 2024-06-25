@@ -55,3 +55,6 @@ vnoremap <space> w
 
 "clipboard sharing
 set clipboard=unnamedplus
+
+"clear search highlighting with ctrl c
+nnoremap <nowait><silent> <C-C> :noh<CR>
