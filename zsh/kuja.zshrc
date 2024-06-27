@@ -1,11 +1,19 @@
+# antigen
+source $HOME/packages/antigen.zsh
+antigen bundle jeffreytse/zsh-vi-mode
+antigen apply
+
 #zsh abbreviations
 source $HOME/.zsh_plugins/zsh-abbr/zsh-abbr.zsh
 
 #Shared config across machines
 source $HOME/.zsh_core_rc
 
-# FZF keybindings
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# # FZF keybindings
+# [ -f ~/.fzf.zsh ]
+
+# Append a command directly
+zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh') && source ~/.fzf.zsh
 
 #Prompt
 autoload -U colors && colors
