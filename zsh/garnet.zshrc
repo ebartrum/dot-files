@@ -9,6 +9,7 @@ source $ZSH/oh-my-zsh.sh
 
 #Environment Variables
 export EDITOR='nvim'
+export PATH="/home/ed/.local/bin:$PATH"
 
 #Shared config across machines
 source $HOME/.zsh_core_rc
