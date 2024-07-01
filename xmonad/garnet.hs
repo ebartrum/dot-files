@@ -22,6 +22,8 @@ myStartupHook = do
 lockScreen = do
     spawn "betterlockscreen -l &"
 
+myLayout = tiled |||  Full
+    where tiled = Tall 1 (3/100) (1/2)
 mySB = statusBarProp "xmobar" (pure xmobarPP)
 
 main :: IO ()
@@ -33,6 +35,7 @@ myConfig = def
         , borderWidth = 4
         , focusedBorderColor = "#138029"
         , startupHook = myStartupHook
+        , layoutHook = myLayout
         }
   `additionalKeysP`
 	    [("M-S-q", quitWithWarning)
