@@ -58,3 +58,6 @@ set clipboard=unnamedplus
 
 "clear search highlighting with ctrl c
 nnoremap <nowait><silent> <C-C> :noh<CR>
+
+command! OpenCoreCFG edit ~/.config/nvim/core.vim
+command! ReloadCFG source $MYVIMRC
