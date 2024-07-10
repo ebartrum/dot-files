@@ -30,3 +30,5 @@ eval $(keychain --eval --quiet id_ed25519)
 # append
 path+=('/opt/cuda/bin')
 export PATH
+
+export SYSTEMD_SLEEP_FREEZE_USER_SESSIONS=0
