@@ -66,3 +66,5 @@ command! ReloadCFG source $MYVIMRC
 set termguicolors
 let ayucolor="dark"
 colorscheme ayu
+hi User1 guifg=#BBBBBB guibg=#bf7618
+set statusline=%1*%t%r
