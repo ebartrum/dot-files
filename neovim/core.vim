@@ -13,11 +13,11 @@ Plug 'folke/persistence.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'ptzz/lf.vim'
 Plug 'voldikss/vim-floaterm'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.6' }
 Plug 'zhou13/vim-easyescape'
-
+Plug 'ayu-theme/ayu-vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 call plug#end()
 
 "vim-commentary shortcut (Ctrl /)
@@ -61,3 +61,8 @@ nnoremap <nowait><silent> <C-C> :noh<CR>
 
 command! OpenCoreCFG edit ~/.config/nvim/core.vim
 command! ReloadCFG source $MYVIMRC
+
+" colorscheme
+set termguicolors
+let ayucolor="dark"
+colorscheme ayu
