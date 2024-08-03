@@ -8,9 +8,9 @@ source $HOME/.zsh_core_rc
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #Prompt
-HOSTCOLOUR=magenta
+HOSTCOLOUR=blue
 autoload -U colors && colors
-PS1="%{$fg[green]%}%n%{$reset_color%}@%{$fg[blue]%}$(hostname) %{$fg[green]%}%~ %{$reset_color%}% "
+PS1="%{$fg[green]%}%n%{$reset_color%}@%{$fg[$HOSTCOLOUR]%}$(hostname):%{$fg[yellow]%}$STY %{$fg[green]%}%~ %{$reset_color%}% "
 
 #Environment Variables
 export EDITOR='nvim'
