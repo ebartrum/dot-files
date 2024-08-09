@@ -7,6 +7,7 @@ import XMonad.Hooks.EwmhDesktops
 import XMonad.Hooks.StatusBar
 import XMonad.Hooks.StatusBar.PP
 import qualified XMonad.StackSet as W
+import XMonad.Actions.CycleWS
 import System.Exit
 import Control.Monad
 
@@ -39,6 +40,8 @@ myWorkspaces = ["1","2","3","4","5","6","7","8","9"]
 myKeys = [("M-S-q", quitWithWarning)
     ,("M-S-l", lockScreen)
     ,("M-S-s", screenshotScreen)
+    ,("M-n", nextScreen)
+    ,("M-S-n", shiftNextScreen)
     ,("M-f", spawn "firefox")
     ,("M-h", windows W.focusMaster)
     ,("M-l", windows W.focusDown)
