@@ -28,10 +28,11 @@ screenshotScreen = do
 
 myLayout = tiled |||  Full
 tiled = Tall 1 (3.0/100.0) (1.0/2.0)
-mySB = statusBarProp "xmobar" (pure xmobarPP)
+mySB0 = statusBarProp "xmobar -x 0" (pure xmobarPP)
+mySB1 = statusBarProp "xmobar -x 1" (pure xmobarPP)
 
 main :: IO ()
-main = xmonad $ ewmhFullscreen $ ewmh $ withEasySB mySB defToggleStrutsKey myConfig
+main = xmonad $ ewmhFullscreen $ ewmh $ withEasySB (mySB0 <> mySB1) defToggleStrutsKey myConfig
 
 myWorkspaces = ["1","2","3","4","5","6","7","8","9"]
 
