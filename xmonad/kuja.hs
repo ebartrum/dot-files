@@ -32,6 +32,12 @@ mySB = statusBarProp "xmobar" (pure xmobarPP)
 main :: IO ()
 main = xmonad $ ewmhFullscreen $ ewmh $ withEasySB mySB defToggleStrutsKey myConfig
 
+myKeys = [("M-S-q", quitWithWarning)
+    ,("M-S-l", lockScreen)
+    ,("M-S-s", screenshotScreen)
+    ,("M-f", spawn "firefox")
+    ]
+
 myConfig = def
         { terminal    = "alacritty"
         , modMask     = mod4Mask
@@ -40,9 +46,4 @@ myConfig = def
         , startupHook = myStartupHook
         , layoutHook = myLayout
         }
-  `additionalKeysP`
-	    [("M-S-q", quitWithWarning)
-	    ,("M-S-l", lockScreen)
-	    ,("M-S-s", screenshotScreen)
-	    ,("M-f", spawn "firefox")
-	    ]
+  `additionalKeysP` myKeys
