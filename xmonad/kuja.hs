@@ -40,6 +40,8 @@ myKeys = [("M-S-q", quitWithWarning)
     ,("M-S-l", lockScreen)
     ,("M-S-s", screenshotScreen)
     ,("M-f", spawn "firefox")
+    ,("M-h", windows W.focusMaster)
+    ,("M-l", windows W.focusDown)
     ] ++ 
     [ (otherModMasks ++ "M-" ++ [key], action tag)
       | (tag, key)  <- zip myWorkspaces "123456789"
