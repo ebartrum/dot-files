@@ -6,6 +6,8 @@ import XMonad.Util.Run
 import XMonad.Hooks.EwmhDesktops
 import XMonad.Hooks.StatusBar
 import XMonad.Hooks.StatusBar.PP
+import qualified XMonad.StackSet as W
+import XMonad.Actions.CycleWS
 import System.Exit
 import Control.Monad
 
@@ -21,6 +23,9 @@ myStartupHook = do
 
 lockScreen = do
     spawn "betterlockscreen -l &"
+
+screenshotScreen = do
+    spawn "scrot -s ~/Pictures/screenshot.png &"
 
 myLayout = tiled |||  Full
     where tiled = Tall 1 (3/100) (1/2)
@@ -40,5 +45,10 @@ myConfig = def
   `additionalKeysP`
 	    [("M-S-q", quitWithWarning)
 	    ,("M-S-l", lockScreen)
-	    ,("M-f", spawn "firefox")
+        ,("M-S-s", screenshotScreen)
+        ,("M-n", nextScreen)
+        ,("M-S-n", shiftNextScreen)
+        ,("M-f", spawn "firefox")
+        ,("M-h", windows W.focusMaster)
+        ,("M-l", windows W.focusDown)
 	    ]
