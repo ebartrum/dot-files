@@ -32,7 +32,7 @@ set number relativenumber
 nnoremap   <silent>   <C-t>   :FloatermNew<CR>
 tnoremap   <silent>   <C-t>   <C-\><C-n>:FloatermKill<CR>
 tnoremap   <silent>   <C-c>   <C-\><C-n>:FloatermKill<CR>
-nnoremap   <silent>   <C-o> <cmd>Telescope git_files<cr>
+nnoremap   <silent>   <C-o> <cmd>Telescope find_files hidden=true no_ignore=true<cr>
 
 " Disable esc in insert mode
 imap <Esc> <NOP>
