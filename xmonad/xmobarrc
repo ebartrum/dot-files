@@ -33,5 +33,5 @@ Config { overrideRedirect = False
                       ]
          , sepChar  = "%"
          , alignSep = "}{"
-         , template = "%XMonadLog% }{ %cpu% | %memory% * %swap% | %wifi%:  %dynnetwork% | %battery% | %date% "
+         , template = "%XMonadLog% }{ %cpu% | %memory% * %swap% |<fc=#276e09>%wifi%</fc>:  %dynnetwork% | %battery% | %date% "
          }
