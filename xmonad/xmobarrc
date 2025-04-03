@@ -11,6 +11,14 @@ Config { overrideRedirect = False
                           ] 10
                       , Run Memory ["--template", "Mem: <usedratio>%"] 10
                       , Run Swap [] 10
+                      , Run Com "/home/ed/.wireless.sh" [] "wifi" 30
+                      , Run DynNetwork     [ "--template" , "<tx>kB/s|<rx>kB/s"
+                             , "--Low"      , "1000"       -- units: B/s
+                             , "--High"     , "5000"       -- units: B/s
+                             , "--low"      , "darkgreen"
+                             , "--normal"   , "darkorange"
+                             , "--high"     , "darkred"
+                             ] 10
                       , Run Battery [
                         "-t", "Battery: <left>%",
                         "--",
@@ -25,5 +33,5 @@ Config { overrideRedirect = False
                       ]
          , sepChar  = "%"
          , alignSep = "}{"
-         , template = "%XMonadLog% }{ %cpu% | %memory% * %swap% | %battery% | %date% "
+         , template = "%XMonadLog% }{ %cpu% | %memory% * %swap% | %wifi%:  %dynnetwork% | %battery% | %date% "
          }
