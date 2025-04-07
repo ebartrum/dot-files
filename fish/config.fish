@@ -20,3 +20,4 @@ abbr --add gs git status
 #key-bindings
 bind \co forward-word
 bind \ck up-or-search
+bind \cp accept-autosuggestion
