@@ -16,3 +16,7 @@ abbr --add gap git add -p
 abbr --add gb git branch
 abbr --add gbd git branch -d
 abbr --add gs git status
+
+#key-bindings
+bind \co forward-word
+bind \ck up-or-search
