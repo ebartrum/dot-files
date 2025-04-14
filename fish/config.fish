@@ -16,6 +16,7 @@ abbr --add gap git add -p
 abbr --add gb git branch
 abbr --add gbd git branch -d
 abbr --add gs git status
+abbr --add vim nvim
 
 #key-bindings
 bind \co forward-word
