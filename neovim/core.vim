@@ -29,7 +29,7 @@ noremap <silent> " :Commentary<CR>
 " Hybrid line numbers
 set number relativenumber
 
-nnoremap   <silent>   <C-t>   :FloatermNew<CR>
+nnoremap   <silent>   <C-t>   :FloatermNew fish<CR>
 tnoremap   <silent>   <C-t>   <C-\><C-n>:FloatermKill<CR>
 tnoremap   <silent>   <C-c>   <C-\><C-n>:FloatermKill<CR>
 nnoremap   <silent>   <C-o> <cmd>Telescope find_files hidden=true no_ignore=true<cr>

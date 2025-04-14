@@ -1,5 +1,5 @@
 #Remove greeting
-set --erase fish_greeting
+set -g fish_greeting
 
 #Abbreviations
 abbr --add gch git checkout
@@ -22,4 +22,5 @@ bind \co forward-word
 bind \ck up-or-search
 bind \cp accept-autosuggestion
 
+#Environment variables
 set -gx EDITOR nvim
