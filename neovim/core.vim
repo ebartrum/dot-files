@@ -16,7 +16,7 @@ Plug 'voldikss/vim-floaterm'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.6' }
 Plug 'zhou13/vim-easyescape'
-Plug 'ayu-theme/ayu-vim'
+Plug 'rebelot/kanagawa.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 call plug#end()
 
@@ -64,7 +64,4 @@ command! ReloadCFG source $MYVIMRC
 
 " colorscheme
 set termguicolors
-let ayucolor="dark"
-colorscheme ayu
-hi User1 guifg=#BBBBBB guibg=#bf7618
-set statusline=%1*%t%r
+colorscheme kanagawa
