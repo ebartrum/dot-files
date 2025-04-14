@@ -21,3 +21,5 @@ abbr --add gs git status
 bind \co forward-word
 bind \ck up-or-search
 bind \cp accept-autosuggestion
+
+set -gx EDITOR nvim
