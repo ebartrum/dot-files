@@ -32,3 +32,5 @@ path+=('/opt/cuda/bin')
 export PATH
 
 export SYSTEMD_SLEEP_FREEZE_USER_SESSIONS=0
+
+alias vim=nvim
