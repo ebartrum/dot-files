@@ -63,9 +63,9 @@ nnoremap <nowait><silent> <C-C> :noh<CR>
 command! OpenCoreCFG edit ~/.config/nvim/core.vim
 command! ReloadCFG source $MYVIMRC
 
-"Theme options
-set background=dark
-let g:airline_theme = 'one'
+" colorscheme
+set termguicolors
+colorscheme kanagawa
 
 "Beacon
 highlight Beacon guibg=gray ctermbg=15
