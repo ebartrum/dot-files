@@ -18,6 +18,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.6' }
 Plug 'zhou13/vim-easyescape'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+Plug 'danilamihailov/beacon.nvim'
 call plug#end()
 
 "vim-commentary shortcut (Ctrl /)
@@ -62,6 +63,9 @@ nnoremap <nowait><silent> <C-C> :noh<CR>
 command! OpenCoreCFG edit ~/.config/nvim/core.vim
 command! ReloadCFG source $MYVIMRC
 
-" colorscheme
-set termguicolors
-colorscheme kanagawa
+"Theme options
+set background=dark
+let g:airline_theme = 'one'
+
+"Beacon
+highlight Beacon guibg=gray ctermbg=15
