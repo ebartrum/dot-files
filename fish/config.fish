@@ -15,6 +15,7 @@ abbr --add ga git add
 abbr --add gap git add -p
 abbr --add gb git branch
 abbr --add gbd git branch -d
+abbr --add gpsu git push --set-upstream origin '(git symbolic-ref --short HEAD)'
 abbr --add gs git status
 abbr --add vim nvim
 
