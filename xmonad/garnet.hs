@@ -31,6 +31,24 @@ myLayout = tiled |||  Full
     where tiled = Tall 1 (3/100) (1/2)
 mySB = statusBarProp "xmobar" (pure xmobarPP)
 
+myWorkspaces = ["1","2","3","4","5","6","7","8","9"]
+
+myKeys = [("M-S-q", quitWithWarning)
+	    ,("M-S-l", lockScreen)
+        ,("M-S-s", screenshotScreen)
+        ,("M-n", nextScreen)
+        ,("M-S-n", shiftNextScreen)
+        ,("M-f", spawn "firefox")
+        ,("M-h", windows W.focusMaster)
+        ,("M-l", windows W.focusDown)
+	    ] ++
+	    [ (otherModMasks ++ "M-" ++ [key], action tag)
+	      | (tag, key)  <- zip myWorkspaces "123456789"
+              -- Switch W.greedyView to W.view, to prevent multimonitor issue
+	      , (otherModMasks, action) <- [ ("", windows . W.view)
+					      , ("S-", windows . W.shift)]
+	    ]
+
 main :: IO ()
 main = xmonad $ ewmhFullscreen $ ewmh $ withEasySB mySB defToggleStrutsKey myConfig
 
@@ -41,14 +59,4 @@ myConfig = def
         , focusedBorderColor = "#138029"
         , startupHook = myStartupHook
         , layoutHook = myLayout
-        }
-  `additionalKeysP`
-	    [("M-S-q", quitWithWarning)
-	    ,("M-S-l", lockScreen)
-        ,("M-S-s", screenshotScreen)
-        ,("M-n", nextScreen)
-        ,("M-S-n", shiftNextScreen)
-        ,("M-f", spawn "firefox")
-        ,("M-h", windows W.focusMaster)
-        ,("M-l", windows W.focusDown)
-	    ]
+        } `additionalKeysP` myKeys
