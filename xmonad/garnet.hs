@@ -39,6 +39,7 @@ myKeys = [("M-S-q", quitWithWarning)
         ,("M-n", nextScreen)
         ,("M-S-n", shiftNextScreen)
         ,("M-f", spawn "firefox")
+        ,("M-t", spawn "thunar")
         ,("M-h", windows W.focusMaster)
         ,("M-l", windows W.focusDown)
 	    ] ++
