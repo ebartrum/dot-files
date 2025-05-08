@@ -27,6 +27,7 @@ bind \cp accept-autosuggestion
 #Environment variables
 set -gx EDITOR nvim
 
+#prompt
 function fish_right_prompt -d "Write out the right prompt"
     echo (set_color yellow) $STY (set_color normal)
 end
