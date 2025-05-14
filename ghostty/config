@@ -1,0 +1,6 @@
+font-size = 14
+gtk-tabs-location = hidden
+scrollback-limit = 10_000
+clipboard-read = allow
+clipboard-paste-protection = false
+window-decoration = false
