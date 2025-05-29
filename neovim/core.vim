@@ -69,3 +69,6 @@ colorscheme kanagawa
 
 "Beacon
 highlight Beacon guibg=gray ctermbg=15
+
+"Turn off mouse
+set mouse=
