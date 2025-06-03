@@ -23,6 +23,7 @@ abbr --add vim nvim
 bind \co forward-word
 bind \ck up-or-search
 bind \cp accept-autosuggestion
+bind alt-o 'nvim -c ":Telescope find_files hidden=true no_ignore=true"'
 
 #Environment variables
 set -gx EDITOR nvim
@@ -31,3 +32,27 @@ set -gx EDITOR nvim
 function fish_right_prompt -d "Write out the right prompt"
     echo (set_color yellow) $STY (set_color normal)
 end
+
+# ssh-agent
+if test -z (pgrep ssh-agent)
+  eval (ssh-agent -c)
+  set -Ux SSH_AUTH_SOCK $SSH_AUTH_SOCK
+  set -Ux SSH_AGENT_PID $SSH_AGENT_PID
+  set -Ux SSH_AUTH_SOCK $SSH_AUTH_SOCK
+end
+
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /opt/miniconda3/bin/conda
+    eval /opt/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+else
+    if test -f "/opt/miniconda3/etc/fish/conf.d/conda.fish"
+        . "/opt/miniconda3/etc/fish/conf.d/conda.fish"
+    else
+        set -x PATH "/opt/miniconda3/bin" $PATH
+    end
+end
+# <<< conda initialize <<<
+
