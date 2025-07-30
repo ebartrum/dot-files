@@ -21,9 +21,14 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' 
 Plug 'danilamihailov/beacon.nvim'
 call plug#end()
 
-"vim-commentary shortcut (Ctrl /)
-noremap <silent> <C-/> :Commentary<CR>
-inoremap <silent> <C-/> <Esc>:Commentary<CR>A
+"vim-commentary shortcut (Ctrl /) - for now this only works in tmux.
+noremap <silent>  :Commentary<CR>
+inoremap <silent>   <Esc>:Commentary<CR>A
+
+" The no-tmux version is below:
+" noremap <silent> <C-/> :Commentary<CR>
+" inoremap <silent> <C-/> <Esc>:Commentary<CR>A
+
 noremap <silent> # :Commentary<CR>
 noremap <silent> " :Commentary<CR>
 
