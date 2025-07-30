@@ -54,7 +54,7 @@ main :: IO ()
 main = xmonad $ ewmhFullscreen $ ewmh $ withEasySB mySB defToggleStrutsKey myConfig
 
 myConfig = def
-        { terminal    = "alacritty"
+        { terminal    = "ghostty"
         , modMask     = mod4Mask
         , borderWidth = 4
         , focusedBorderColor = "#138029"
