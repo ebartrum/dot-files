@@ -41,9 +41,11 @@ noremap <silent> " :Commentary<CR>
 " Hybrid line numbers
 set number relativenumber
 
+"Floatterm
 nnoremap   <silent>   <C-t>   :FloatermNew fish<CR>
 tnoremap   <silent>   <C-t>   <C-\><C-n>:FloatermKill<CR>
 tnoremap   <silent>   <C-c>   <C-\><C-n>:FloatermKill<CR>
+let g:floaterm_width = 0.9
 
 "telescope options
 
