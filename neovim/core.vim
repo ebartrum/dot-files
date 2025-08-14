@@ -21,6 +21,12 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' 
 Plug 'danilamihailov/beacon.nvim'
 call plug#end()
 
+"markdown preview options
+function OpenMarkdownPreview (url)
+  execute "silent ! firefox --new-window " . a:url
+endfunction
+let g:mkdp_browserfunc = 'OpenMarkdownPreview'
+
 "vim-commentary shortcut (Ctrl /) - for now this only works in tmux.
 noremap <silent>  :Commentary<CR>
 inoremap <silent>   <Esc>:Commentary<CR>A
