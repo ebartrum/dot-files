@@ -19,10 +19,9 @@ quitWithWarning = do
 
 myStartupHook = do
     spawnOnce "feh --bg-scale ~/Documents/repos/wallpapers/images/low_poly_landscape.png &"
-    spawnOnce "picom --config ~/.config/picom.conf &"
 
 lockScreen = do
-    spawn "betterlockscreen -l &"
+    spawn "i3lock &"
 
 screenshotScreen = do
     spawn "scrot -s ~/Pictures/screenshot.png &"
@@ -53,7 +52,7 @@ main :: IO ()
 main = xmonad $ ewmhFullscreen $ ewmh $ withEasySB mySB defToggleStrutsKey myConfig
 
 myConfig = def
-        { terminal    = "alacritty"
+        { terminal    = "ghostty"
         , modMask     = mod4Mask
         , borderWidth = 4
         , focusedBorderColor = "#138029"
