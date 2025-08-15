@@ -26,6 +26,7 @@ function OpenMarkdownPreview (url)
   execute "silent ! firefox --new-window " . a:url
 endfunction
 let g:mkdp_browserfunc = 'OpenMarkdownPreview'
+noremap <silent> <C-m> :MarkdownPreviewToggle<CR>
 
 "vim-commentary shortcut (Ctrl /) - for now this only works in tmux.
 noremap <silent>  :Commentary<CR>
