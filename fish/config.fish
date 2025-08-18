@@ -23,7 +23,7 @@ abbr --add vim nvim
 bind \co forward-word
 bind \ck up-or-search
 bind \cp accept-autosuggestion
-bind alt-o 'nvim -c ":Telescope find_files hidden=true no_ignore=true"'
+bind alt-o 'nvim -c ":Telescope find_files"'
 
 #Environment variables
 set -gx EDITOR nvim
