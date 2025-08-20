@@ -21,7 +21,7 @@ myStartupHook = do
     spawnOnce "feh --bg-scale ~/Documents/repos/wallpapers/images/low_poly_landscape.png &"
 
 lockScreen = do
-    spawn "i3lock &"
+    spawn "xscreensaver-command -lock"
 
 screenshotScreen = do
     spawn "scrot -s ~/Pictures/screenshot.png &"
