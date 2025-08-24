@@ -10,6 +10,7 @@ import qualified XMonad.StackSet as W
 import XMonad.Actions.CycleWS
 import System.Exit
 import Control.Monad
+import XMonad.Actions.SinkAll
 
 quitWithWarning :: X ()
 quitWithWarning = do
@@ -38,6 +39,7 @@ myKeys = [("M-S-q", quitWithWarning)
         ,("M-n", nextScreen)
         ,("M-S-n", shiftNextScreen)
         ,("M-f", spawn "firefox")
+        ,("M-S-f", sinkAll) -- Turns all floating windows into tiled windows
         ,("M-h", windows W.focusMaster)
         ,("M-l", windows W.focusDown)
 	    ] ++
