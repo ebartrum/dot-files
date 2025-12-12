@@ -17,6 +17,7 @@ abbr --add gb git branch
 abbr --add gbd git branch -d
 abbr --add gpsu git push --set-upstream origin '(git symbolic-ref --short HEAD)'
 abbr --add gs git status
+abbr --add gcf git clean -f
 abbr --add vim nvim
 
 #key-bindings
